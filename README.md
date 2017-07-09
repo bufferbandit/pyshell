@@ -1,0 +1,2 @@
+# pyshell
+Small python shell
