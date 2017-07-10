@@ -2,7 +2,7 @@
 
 blockstarts = ("if","else","def","class","with","for","try","except","while")
 inblock = False                             # We're not in a block yet
-prefix = "Py >>> "                          # Initialize the prefix
+prefix = ">>> "                          # Initialize the prefix
 with open("client","w") as c:c.write('')    # Clean out the file on a new run
 while 1:                                    # Start the loop
     i = input(prefix)                       # Set input
@@ -26,7 +26,7 @@ while 1:                                    # Start the loop
                 c.write('')                 # And clean it out
     elif inblock:                           # If we're in a block   
         if i == "":                         # See if we did hit enter
-            prefix = "Py >>> "              # Re-initialize the prefix
+            prefix = ">>> "              # Re-initialize the prefix
             inblock = False                 # We're not in the block anymore
         else:                               # If not hit enter...       
             c.write("    " + i + "\n")      # Write file with indentation
