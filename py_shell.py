@@ -1,5 +1,6 @@
 # Small python shell by @bufferbandit
 
+print("Python 'interpreter' by bufferbandit.")
 blockstarts = ("if","else","def","class","with","for","try","except","while")
 inblock = False                             # We're not in a block yet
 prefix = ">>> "                          # Initialize the prefix
